@@ -1,4 +1,7 @@
 # Jar Package Encrypt and Decrypt
+# Macbook 运行make命令后需要将libencrypt.so文件名改为libencrypt.dylib
+# 查看自己本机的java home命令/usr/libexec/java_home -V
+# makefile中的INCLUDE改为NCLUDE = -I/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/include/ -I/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/include/darwin/
 ## JAR包反编译
    使用 [JD-GUI](https://github.com/java-decompiler/jd-gui/releases) 打开JAR包，就能获取JAR包的源码， 这样如果对于想保护源码的开发者或厂商来说是一件烦恼的事情；
    
